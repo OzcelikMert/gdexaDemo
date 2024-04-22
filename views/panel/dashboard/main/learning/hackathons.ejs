@@ -1,0 +1,68 @@
+<div class="container-fluid e_page hackathons" id="hackathons" style="display:none;">
+        <div class="row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="m-top-100">
+                            <h3 class="breadcrumb-title text-dark">Hackathons & Thinkatons</h3>
+                            <small class="mt-4 text-muted">Join an Event to gain experience, fulfill your learning path and get ready for the hiring market</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-5">
+                <div class="row events" style="width: 85%;">
+                    <% var hackathons_data = [
+                        {"img": "hackathons-adtech.jpg", "title": "Build the next EdTech unicorn", "start_date": "07 Jan 2022", "progress": 84, "booked": 40},
+                        {"img": "hackathons-mobilityapp.jpg", "title": "Creating a new mobility app", "start_date": "17 Jan 2022", "progress": 25, "booked": 20},
+                        {"img": "hackathons-cloudsec.png", "title": "Future of Cloud security", "start_date": "01 Feb 2022", "progress": 84, "booked": 40},
+                        {"img": "hackathons-designsys.jpg", "title": "Design Systems Hackathon", "start_date": "07 Feb 2022", "progress": 15, "booked": 10}
+                    ]; %>
+                    <% hackathons_data.forEach(function(e){ %>
+                        <div class="col-md-5 mb-4">
+                            <div class="card h-100">
+                                <div class="position-relative card-div-top">
+                                    <div>
+                                        <img src="img/<%-e.img%>" class="card-img-top">
+                                    </div>
+                                    <h4 class="card-title text-capitalize"><%-e.title%></h4>
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="event-info">
+                                        <table>
+                                            <tr>
+                                                <th width="50%">Start Date</th>
+                                                <th width="30%">Duration</th>
+                                                <th width="20%">Location</th>
+                                            </tr>
+                                            <tr>
+                                                <td><%-e.start_date%></td>
+                                                <td>7 Days</td>
+                                                <td>Remote</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="w-100 mt-4">
+                                        <div class="progress rounded" style="height: 5px;width: 90%;">
+                                            <div class="progress-bar progress_bar_stick" role="progressbar" style="width: <%-e.progress%>%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <small class="text-muted float-right" style="margin-top: -12px;"><%-e.progress%>%</small>
+                                    </div>
+                                    <small class="mt-2" style="color: #838383a8;"><%-e.booked%> / 50 seats booked</small>
+                                </div>
+                                <div class="card-footer">
+                                    <small style="color: #838383a8;">Joined participants</small>
+                                    <br>
+                                    <div class="float-left">
+                                        <img src="img/hackathons-joineds.png">
+                                    </div>
+                                    <a href="#hackathon_detail" class="btn btn-secondary border-0 float-right">Join event</a>
+                                </div>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+</div>

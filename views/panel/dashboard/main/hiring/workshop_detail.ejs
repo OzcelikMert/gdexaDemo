@@ -1,0 +1,104 @@
+<%var tags = ["Growth Mindset", "Enterpreneurship", "Marketing"]; %>
+<div class="container-fluid e_page hackathon-detail" id="workshop_detail" style="display:none;">
+    <div class="row">
+        <div class="col-md-8 mt-5 pl-5">
+            <div class="card mb-5">
+                <div class="position-relative card-div-top">
+                    <div class="banner-date">
+                        <b class="text-dark">9</b>
+                        <p>Feb</p>
+                    </div>
+                    <div class="card-img-top-bg">
+                        <img src="img/hackathons-detailbanner.jpg" class="card-img-top">
+                    </div>
+                    <h2 class="card-title">Growth Mindset</h2>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title text-dark">Skills you will learn</h5>
+                    <div class="row">
+                        <div class="col-md-6 will-learn search-keyword">
+                            <ul class="nav m-n1" id="pills-tab" role="tablist">
+                                <% tags.forEach(function(e){ %>
+                                    <li class="nav-item bg-opacity-primary color-primary" role="presentation" style="border-radius: 5px">
+                                        <a class="nav-link" style="background: unset;color: #3f22e1bf;font-weight: 600;" data-toggle="pill" href="javascript:void(0)" role="tab" aria-controls="pills-home" aria-selected="true"><%-e%></a>
+                                    </li>
+                                <% });%>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div>
+                                <small style="color: #838383a8;">Joined workshop</small>
+                                <br>
+                                <div class="float-left">
+                                    <img class="pb-3" src="img/hackathons-joineds.png">
+                                </div>
+                                <a href="#" class="btn btn-secondary border-0 float-right">Join workshop</a>
+                            </div>
+
+                            <div class="w-100 mt-4">
+                                <div class="progress rounded" style="height: 5px;width: 90%;">
+                                    <div class="progress-bar progress_bar_stick" role="progressbar" style="width: 84%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <small class="text-muted float-right" style="margin-top: -12px;">84%</small>
+                            </div>
+                            <small class="mt-2" style="color: #838383a8;">40 / 50 seats booked</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="atbd-collapse">
+                        <div class="atbd-collapse-item">
+                            <div class="atbd-collapse-item__header active">
+                                <a href="#" class="item-link" data-toggle="collapse" data-target="#collapse-body-1" aria-expanded="true" aria-controls="collapse-body-1">
+                                    <i class="la la-angle-right"></i>
+                                    <h6>Introduction</h6>
+                                </a>
+                            </div>
+                            <div id="collapse-body-1" class="collapse atbd-collapse-item__body show">
+                                <div class="collapse-body-text">
+                                    <div class="e_talks">
+                                        <div class="media py-20  pr-20 bg-white radius-xl users-list ">
+                                            <img class="w-100" src="img/mindset.png" alt="video">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="atbd-collapse-item">
+                            <div class="atbd-collapse-item__header">
+                                <a href="#" class="item-link" data-toggle="collapse" data-target="#collapse-body-2" aria-expanded="true" aria-controls="collapse-body-2">
+                                    <i class="la la-angle-right"></i>
+                                    <h6>What is Growth Mindest</h6>
+                                </a>
+                            </div>
+                            <div id="collapse-body-2" class="collapse atbd-collapse-item__body">
+                                <div class="collapse-body-text">
+                                    <p>To briefly sum up the findings: Individuals who believe their talents can be developed (through hard work, good strategies, and input from others) have a growth mindset. They tend to achieve more than those with a more fixed mindset (those who believe their talents are innate gifts).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="atbd-collapse-item">
+                            <div class="atbd-collapse-item__header">
+                                <a href="#" class="item-link" data-toggle="collapse" data-target="#collapse-body-3" aria-expanded="true" aria-controls="collapse-body-3">
+                                    <i class="la la-angle-right"></i>
+                                    <h6>Quiz About Growth Mindset</h6>
+                                </a>
+                            </div>
+                            <div id="collapse-body-3" class="collapse atbd-collapse-item__body">
+                                <div class="collapse-body-text">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

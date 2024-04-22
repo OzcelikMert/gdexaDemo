@@ -1,0 +1,80 @@
+<div class="container-fluid e_page marketplace" id="marketplace" style="display:none;">
+        <div class="row">
+            <div>
+                <div class="container mt-5">
+                    <h5 class="text-capitalize">Search for learning topics</h5>
+                    <div class="form mt-4 search-input d-flex">
+                        <i class="fa fa-search"></i>
+                        <input type="search" class="form-control form-input" placeholder="Type and Search">
+                        <button class="btn" type="button">Search</button>
+                    </div>
+                    <div class="mt-4 btn-group-toggle d-flex search-toggle" data-toggle="buttons">
+                        <label class="btn active ml-0">
+                            <input type="radio" name="tag_option" id="option1" value="all" checked> All
+                        </label>
+                        <label class="btn">
+                            <input type="radio" name="tag_option" id="option2" value="udemy"> Udemy
+                        </label>
+                        <label class="btn">
+                            <input type="radio" name="tag_option" id="option3" value="skillshare"> Skillshare
+                        </label>
+                        <label class="btn">
+                            <input type="radio" name="tag_option" id="option3" value="coursera"> Coursera
+                        </label>
+                        <label class="btn">
+                            <input type="radio" name="tag_option" id="option3" value="linkedin"> Linkedin
+                        </label>
+                        <label class="btn">
+                            <input type="radio" name="tag_option" id="option3" value="free"> Free
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-11">
+                        <div class="m-top-100">
+                            <h3 class="breadcrumb-title text-dark">What to learn next</h3>
+                            <h5 class="mt-4 text-dark"><b>Recommended for you</b></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-4">
+                <div class="row recommended">
+                    <% var marketplace_data = [
+                        {"img": "marketpace-uiux.png", "tag": "Udemy", "title": "User experience design fundamentals", "author": "Joe Natoli", "students": "87,353"},
+                        {"img": "marketplace-ux.jpg", "tag": "Udemy", "title": "Sketching for ux designers - boost ux work with pen & paper!", "author": "Kristina Szerorny", "students": "18,547"},
+                        {"img": "marketplace-powerbi.png", "tag": "Skillshare", "title": "Microsoft Power BI - complete beginners guide to financial dashboards", "author": "Charlie Walker", "students": "4,353"},
+                        {"img": "marketplace-datascience.jpg", "tag": "Skillshare", "title": "Data Science 101: Python data visualization for beginners", "author": "Alvin Wan", "students": "1,753"},
+                        {"img": "marketplace-reachgoals.jpg", "tag": "Coursera", "title": "Reach your goals: 7 personal development exercises to build a life you love", "author": "Joe Natoli", "students": "87,353"},
+                        {"img": "marketpace-prodmasterclass.png", "tag": "Linkedin", "title": "Productivity masterclass - principles and tools to boost your productivity", "author": "Andy Pizza", "students": "18,547"},
+                        {"img": "marketplace-videoedit.jpg", "tag": "Udemy", "title": "Video editing with adobe premiere pro for beginners", "author": "Carly Kuhn", "students": "4,353"},
+                        {"img": "marketplace-creativecareer.jpg", "tag": "Skillshare", "title": "start your creative career: build a sharp smart online presence", "author": "Sonja Rasula", "students": "1,753"}
+                    ]; %>
+                    <% marketplace_data.forEach(function(e){ %>
+                        <div class="e_recommended_item col-md-3 mb-4" tag="<%-e.tag.toLowerCase()%>">
+                            <div class="card h-100">
+                                <div class="position-relative card-div-top">
+                                    <img src="img/<%-e.img%>" class="card-img-top">
+                                    <button class="btn btn-secondary"><i class="fa fa-plus"></i> Add</button>
+                                    <span class="text-uppercase <%-e.tag.toLowerCase()%>"><%-e.tag%></span>
+                                </div>
+
+                                <div class="card-body">
+                                    <h6 class="card-title text-capitalize text-dark mb-0"><%-e.title%></h6>
+                                    <small class="text-muted">by <%-e.author%></small>
+                                </div>
+                                <div class="card-footer border-0">
+                                    <div class="float-left">
+                                        <img src="img/marketplace-rating.png">
+                                    </div>
+                                    <small class="float-right text-muted"><%-e.students%> students</small>
+                                </div>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+</div>

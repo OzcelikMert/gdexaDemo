@@ -1,0 +1,134 @@
+<div class="container-fluid e_page marketplace" id="hr_talent_pool" style="display:none;">
+    <div class="row">
+        <style>
+            .marketplace .search-input input[type=search] {
+                border-radius: 34px 0px 0px 34px !important;
+                width: 330PX !important;
+            }
+            .form-input {height: 73px;}
+        </style>
+        <div class="col-12 pl-5 pt-5">
+                <h5 class="text-capitalize">Search for learning topics</h5>
+                <div class="form mt-4 search-input d-flex">
+                    <i class="fa fa-search" style="padding-top: 10px;"></i>
+                    <input type="search" class="form-control form-input" placeholder="Type and Search">
+                    <input type="search" class="form-control form-input" placeholder="Location" style="margin-left: -30px;">
+                    <input type="search" class="form-control form-input" placeholder="50 KM" style="margin-left: -30px;">
+                    <button class="btn" type="button" style="padding: 34px;">Search</button>
+                </div>
+        </div>
+        <div class="col-7 pl-5">
+            <p class="pl-2 pt-3 m-0" style="font-size: 12px"><b>Related Job profiles</b></p>
+            <div class="mt-1 btn-group-toggle d-flex search-toggle" data-toggle="buttons">
+                <label style="font-size: 12px" class="btn"><input type="radio" name="tag_option" id="option3" value="BackendDeveloper"> Backend Developer</label>
+                <label style="font-size: 12px" class="btn"><input type="radio" name="tag_option" id="option3" value="FullstackDeveloper"> Fullstack Developer</label>
+                <label style="font-size: 12px" class="btn"><input type="radio" name="tag_option" id="option3" value="ProductEngineer"> Product Engineer</label>
+                <label style="font-size: 12px" class="btn"><input type="radio" name="tag_option" id="option3" value="ProductDeveloper"> Product Developer</label>
+                <label style="font-size: 12px" class="btn"><input type="radio" name="tag_option" id="option3" value="UXDesigner"> UX Designer</label>
+            </div>
+        </div>
+        <div class="col-5 pl-0">
+            <p class="pl-2 pt-3 m-0" style="font-size: 12px"><b>Working Experience</b></p>
+            <div class="mt-1 btn-group-toggle d-flex search-toggle" data-toggle="buttons">
+                <label style="font-size: 12px" class="btn"><input type="radio" name="tag_option" id="option3" value="0-2"> 0 - 2 years</label>
+                <label style="font-size: 12px" class="btn"><input type="radio" name="tag_option" id="option3" value="3-5"> 3 - 5 years</label>
+                <label style="font-size: 12px" class="btn"><input type="radio" name="tag_option" id="option3" value="5"> 5 years</label>
+            </div>
+        </div>
+
+        <div class="col-10 pb-5"  style="padding-left:30px" >
+            <% var data = [
+                {"img": "img/ekremnamazci.png", location:'Recklinghausen, Germany',  value:'95', b1:'4 x Mentors', b2:'8 x Upskilling Courses', b3: '2 x Thinkathons' },
+                {"img": "img/ekremnamazci.png", location:'Essen, Germany',           value:'91', b1:'3 x Mentors', b2:'6 x Upskilling Courses', b3: '2 x Thinkathons' },
+                {"img": "img/ekremnamazci.png", location:'Dortmund, Germany',        value:'87', b1:'2 x Mentors', b2:'5 x Upskilling Courses', b3: '1 x Thinkathons' },
+                {"img": "img/ekremnamazci.png", location:'Oberhausen, Germany',      value:'79', b1:'1 x Mentors', b2:'6 x Upskilling Courses', b3: '5 x Thinkathons' },
+                {"img": "img/ekremnamazci.png", location:'Bottrop, Germany',         value:'76', b1:'4 x Mentors', b2:'5 x Upskilling Courses', b3: '1 x Thinkathons' },
+                {"img": "img/ekremnamazci.png", location:'Köln, Germany',            value:'85', b1:'2 x Mentors', b2:'4 x Upskilling Courses', b3: '6 x Thinkathons' },
+            ]; %>
+
+            <div class="row">
+                <% data.forEach(function(e, index){ %>
+                <div class="col-md-4 mt-3">
+                    <div class="card">
+                        <div class="card-body text-center pt-30 px-15 pb-0">
+                            <div class="account-profile-cards  mt-4 p-bottom-25">
+                                <div style="display: flex; justify-content: flex-end;position:inherit;margin-top: -17px">
+                                </div>
+                                <div class="ap-img d-flex justify-content-center">
+                                    <img class="xx ap-img__main bg-opacity-primary  wh-120 rounded-circle mb-3 " src="<%-e.img%>" alt="profile">
+                                    <div class="xx user-progress">
+                                        <div class="cicrcle-progress pr-md xx" data-value="<%-e.value%>">
+                                            <div class="cicrcle-progress-body">
+                                                <div class="middle-circle"></div>
+                                                <div class="progress-spinner"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ap-nameAddress">
+                                    <p class="fs-12 pt-0 m-0" style="color: #9299b8;"><i style="margin-left:4px;margin-right: 4px " class="fas fa-map-marker-alt"></i><%-e.location%></p>
+                                    <hr>
+                                    <h6 class="ap-nameAddress__title">Skilling Journey</h6>
+                                    <div class="d-flex mt-2">
+                                        <span class="xxx baggege badge-pill btn-transparent-success"><%-e.b1%></span>
+                                        <span class="xxx baggege badge-pill btn-transparent-info"><%-e.b2%></span>
+                                        <span class="xxx baggege badge-pill btn-transparent-primary"><%-e.b3%></span>
+                                    </div>
+                                </div>
+
+                                <div class="ap-button  button-group d-flex justify-content-center flex-wrap pt-20">
+                                    <a href="#hr_job_profile" class="cancel-event btn btn-secondary border text-capitalize px-25 radius-md" style="font-size: 14px">
+                                        <span data-feather="lock"></span> Unlok Profile
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    .xxx.baggege{
+        border-radius: 10rem !important;
+        height: 30px;
+        margin: 0 auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 6.64px;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 1.1;
+    }
+    .xx.ap-img__main{
+        filter: blur(5px);
+        width: 150px !important;
+        height: 150px !important;
+        border: 3px solid gainsboro;
+    }
+    .xx.user-progress {
+        position: absolute;
+        height: 175px;
+        width: 175px;
+    }
+    .xx.cicrcle-progress{
+        margin-top: 24px;
+        opacity: 0.9;
+    }
+    .xx.cicrcle-progress .middle-circle{
+        height: 90px !important;
+        width: 90px !important;
+        font-size: 20px;
+    }
+    .xx.cicrcle-progress .progress-spinner{
+        height: 100px !important;
+        width:  100px !important;
+    }
+</style>

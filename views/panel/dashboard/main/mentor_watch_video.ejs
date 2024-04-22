@@ -1,0 +1,38 @@
+<div class="container-fluid e_page" id="mentor_watch_video" style="display:none;">
+    <div class="row">
+        <% current_verify_step_2 = 2; %>
+        <%- include('progress/mentor_verify'); %>
+        <div class="col-lg-10 m-bottom-75">
+            <div class="social-overview-wrap">
+                <div class="card border-0">
+                    <div class="card-header" style="position: relative;padding-top: 16px;">
+                        <div class="d-flex">
+                            <h5 class="font-weight-bold">Onboarding Video</h5>
+                        </div>
+
+                        <p class="small pt-1">Watch our Onboarding Video and get to know the platform.</p>
+                    </div>
+                    <div class="row m-0 mt-2 pb-3">
+                        <div class="col-md-12 e_talks">
+                            <div class="media py-20 pl-20 pr-20 bg-white radius-xl users-list justify-content-center">
+                                <img src="img/ekrem-namazci-video.png" alt="video">
+                                <!--iframe height="500px" width="100%"
+                                        src="https://www.youtube.com/embed/il_t1WVLNxk?autoplay=1">
+                                </iframe-->
+                            </div>
+                            <a href="#mentor_masterclass_upload_path"> <button id="watch_video_complete" style="border: none;
+                                           background: #2c99ff;
+                                           border-radius: 7px;
+                                           display: block;
+                                           margin: auto;
+                                           color: white;
+                                           font-size: 14px;
+                                           margin-top: 20px;
+                                           padding: 10px;"><span>Continue onboarding</span></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

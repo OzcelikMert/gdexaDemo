@@ -1,0 +1,137 @@
+<style>
+    .notes-main {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 10px;
+    }
+    .notes-item{
+        display: flex;
+        position: relative;
+        border: 1px solid #dfdfdf;
+        border-radius: 10px;
+        padding: 18px;
+        margin-bottom: 15px;
+    }
+    .notes-main .top-icons {
+        position: absolute;
+        top: -15px;
+        left: 7px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60px;
+    }
+    .notes-main .right-icon{
+        position: absolute;
+        right: 10px;
+    }
+
+</style>
+
+<div class="tab-pane fade" id="pills-notes2" role="tabpanel" aria-labelledby="pills-contact-tab">
+    <div class="container-fluid" style="min-height: 500px">
+        <div class="row m-top-40" >
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-12 d-flex">
+                        <div class="d-flex notes-header-eye-off">
+                            <div>
+                                <span data-feather="eye-off" class="nav-icon-eye"></span>
+                            </div>
+                            <div style="padding-left: 5px;padding-top: 5px;">
+                                <h6>Private notes</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex notes-header-eye m-left-20">
+                            <div>
+                                <span data-feather="eye" class="nav-icon-eye"></span>
+                            </div>
+                            <div style="padding-left: 5px;padding-top: 5px;">
+                                <h6 >Public notes</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex notes-header-total m-left-40">
+                            <button class="btn" data-toggle="modal" data-target="#addNewNote" >
+                                <img src="img/svg/plus.svg" alt="" class="svg-total">
+                            </button>
+                            <div style="padding-left: 5px;padding-top: 8px;">
+                                <h6>Add note</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row m-top-70">
+                    <div class="col-12">
+                        <div class="notes-main">
+                            <div class="notes-item">
+                                <div class="top-icons">
+                                    <span style="background: #e5e5e5;" data-feather="star" class="nav-icon-eye"></span>
+                                    <span style="background: #e5e5e5;" data-feather="trash" class="nav-icon-eye"></span>
+                                </div>
+                                <div class="right-icon">
+                                    <span style="background:#ffe4e5;" data-feather="eye-off" class="nav-icon-eye"></span>
+                                </div>
+                                <div class="content">
+                                    <p class="note-excerpt notes-font-style mb-0">Scheduling new Mentoring session with mentor</p>
+                                </div>
+                            </div>
+                            <div class="notes-item">
+                                <div class="top-icons">
+                                    <span style="background: #e5e5e5;" data-feather="star" class="nav-icon-eye"></span>
+                                    <span style="background: #e5e5e5;" data-feather="trash" class="nav-icon-eye"></span>
+                                </div>
+                                <div class="right-icon">
+                                    <span style="background:#ffe4e5;" data-feather="eye-off" class="nav-icon-eye"></span>
+                                </div>
+                                <div class="content">
+                                    <p class="note-excerpt notes-font-style mb-0">Next Meeting: Monday, 6:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="notes-item">
+                                <div class="top-icons">
+                                    <span style="background: #e5e5e5;" data-feather="star" class="nav-icon-eye"></span>
+                                    <span style="background: #e5e5e5;" data-feather="trash" class="nav-icon-eye"></span>
+                                </div>
+                                <div class="right-icon">
+                                    <span style="background:#ffe4e5;" data-feather="eye-off" class="nav-icon-eye"></span>
+                                </div>
+                                <div class="content">
+                                    <p class="note-excerpt notes-font-style mb-0">Writing Mentoring review</p>
+                                </div>
+                            </div>
+                            <div class="notes-item" >
+                                <div class="top-icons">
+                                    <span style="background: #e5e5e5;" data-feather="star" class="nav-icon-eye"></span>
+                                    <span style="background: #e5e5e5;" data-feather="trash" class="nav-icon-eye"></span>
+                                </div>
+                                <div class="right-icon">
+                                    <span  style="background: #def7f0;" data-feather="eye" class="nav-icon-eye"></span>
+                                </div>
+                                <div class="content">
+                                    <p class="note-excerpt notes-font-style mb-0">Thinking About my next careers goals</p>
+                                </div>
+                            </div>
+                            <div class="notes-item">
+                                <div class="top-icons">
+                                    <span style="background: #e5e5e5;" data-feather="star" class="nav-icon-eye"></span>
+                                    <span style="background: #e5e5e5;" data-feather="trash" class="nav-icon-eye"></span>
+                                </div>
+                                <div class="right-icon">
+                                    <span  style="background: #def7f0;" data-feather="eye" class="nav-icon-eye"></span>
+                                </div>
+                                <div class="content">
+                                    <p class="note-excerpt notes-font-style mb-0">Writing summary for the next session of the
+                                        blog post "What is human centered design"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+

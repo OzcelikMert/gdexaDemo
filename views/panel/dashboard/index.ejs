@@ -1,0 +1,77 @@
+<% var pages = [
+    "main/index_2",
+    "main/index",
+    "main/watch_video",
+    "main/mentor_watch_video",
+    "main/profile_completion",
+    "main/profile_completion_2",
+    "main/profile_completion_3",
+    "main/mentor_profile_completion",
+    "main/mentor_profile_completion_2",
+    "main/mentor_profile_completion_3",
+
+    "main/profile",
+    "main/mentor_overview",
+    "main/learning_paths",
+    "main/learning_path_detail",
+    "main/mentor_matching",
+    "main/mentor_matching_overview",
+    "main/mentor_matching_overview_2",
+    "main/mentor_last_profile",
+    "main/talent_last_profile",
+    "main/mentor_matching_2",
+    "main/learning_path_meeting",
+    "main/learning_path_meeting",
+    "main/all_learning_paths",
+    "main/mentoring_space",
+    "main/master_class/index",
+    "main/master_class/index_2",
+    "main/master_class_mentor/index",
+
+    "main/learning/marketplace",
+    "main/learning/hackathons",
+    "main/learning/hackathon_detail",
+    "main/learning/skilling_path",
+
+    "main/hiring/workshops",
+    "main/hiring/workshop_detail",
+    "main/hiring/job_board",
+    "main/hiring/job_board_details",
+    "main/hiring/job_profile",
+    "main/hiring/interviews_and_offers",
+    "main/hiring/interviews_and_offers",
+
+    "main/dashboard/dashboard_admin",
+    "main/dashboard/masterclass_upload",
+    "main/dashboard/masterclass_install",
+    "main/dashboard/masterclass_add_new",
+    "main/dashboard/masterclass_add_new_2",
+    "main/dashboard/my_dashboard",
+    "main/dashboard/talents",
+    "main/dashboard/masterclass_upload_path",
+    "main/dashboard/learning_paths_mentors",
+    "main/dashboard/learning_paths_mentors2_1",
+    "main/dashboard/learning_paths_mentors_2",
+    "main/dashboard/learning_paths_mentors2_2",
+    "main/dashboard/learning_paths_mentors_3",
+    "main/dashboard/learning_paths_mentors2_3",
+
+    "main/wallet/my_wallet",
+    "main/wallet/login",
+
+    "main/dashboard/login/login_admin.ejs",
+    "main/dashboard/login/login_mentor.ejs",
+    "main/dashboard/login/login_talent.ejs",
+
+    "main/hrview/hr_account_settings.ejs",
+    "main/hrview/hr_dashboard.ejs",
+    "main/hrview/hr_job_postings.ejs",
+    "main/hrview/hr_talent_pool.ejs",
+    "main/hrview/hr_your_unlocked_talents.ejs",
+    "main/hrview/hr_job_profile.ejs"
+
+]; %>
+
+<% pages.forEach(function(e){ %>
+    <section style="display: unset"><%- include(e) %></section>
+<% }) %>

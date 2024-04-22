@@ -1,0 +1,69 @@
+<% if(current_verify_step_2) { %>
+    <div class="col-lg-10 mb-25 e_verifycation_bar_2"  style="margin-top: 20px">
+        <div class="social-overview-wrap">
+            <div class="card border-0">
+                <div class="card-body">
+                    <ul class="socaial-tic">
+                        <li class="">
+                            <div class="m-auto">
+                                <a href="#dashboard_mentor">
+                                    <img src="img/pagePicture/tic.png" alt="">
+                                </a>
+                            </div>
+                            <div class="m-top-10">
+                                <h6 style="font-size: 13px;">Complete Your Profiles</h6>
+                                <p style="font-size: 11px">Confirm your account by verifying  <br> the link sent to your email address</p>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="m-auto">
+                                <a href="#mentor_watch_video">
+                                    <% if(current_verify_step_2 < 2) { %>
+                                        <div class="progress-step">2</div>
+                                    <% } else { %>
+                                        <img src="img/pagePicture/tic.png" alt="">
+                                    <% } %>
+                                </a>
+                            </div>
+                            <div class="m-top-10">
+                                <h6 style="font-size: 13px;">Watch Video</h6>
+                                <p style="font-size: 11px">Watch our Onboarding Video <br> and get to know the platform</p>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="m-top-10">
+                                <a href="#mentor_masterclass_upload_path">
+                                    <% if(current_verify_step_2 < 3) { %>
+                                        <div class="progress-step">3</div>
+                                    <% } else { %>
+                                        <img src="img/pagePicture/tic.png" alt="">
+                                    <% } %>
+                                </a>
+                            </div>
+                            <div class="m-top-10">
+                                <h6 style="font-size: 13px;">Upload Masterclass</h6>
+                                <p style="font-size: 11px">To unlock your Mentor profile <br> please upload your masterclass</p>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="m-auto">
+                                <a href="#learning_paths_mentors2_3">
+                                    <% if(current_verify_step_2 < 4) { %>
+                                        <div class="progress-step">4</div>
+                                    <% } else { %>
+                                        <img src="img/pagePicture/tic.png" alt="">
+                                    <% } %>
+                                </a>
+                            </div>
+                            <div class="m-top-10">
+                                <h6 style="font-size: 13px;">Create Learning Path</h6>
+                                <p style="font-size: 11px">Create your individual learning path <br> for your talents</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<% } %>

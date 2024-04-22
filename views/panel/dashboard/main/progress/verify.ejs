@@ -1,0 +1,81 @@
+<% if(current_verify_step) { %>
+    <div class="col-lg-10 mb-25" id="verifycation_bar" style="margin-top: 20px">
+        <div class="social-overview-wrap">
+            <div class="card border-0">
+                <div class="card-body">
+                    <ul class="socaial-tic">
+                        <li class="">
+                            <div class="m-auto">
+                                <a href="#dashboard">
+                                    <img src="img/pagePicture/tic.png" alt="">
+                                </a>
+                            </div>
+                            <div class="m-top-10">
+                                <button style="background: #efefef;color: blue;border: none;border-radius: 16px;height: 22px;font-size: 11px;"><span>100 XP</span></button>
+                            </div>
+                            <div class="m-top-10">
+                                <h6 style="font-size: 13px;">Verify your account</h6>
+                                <p style="font-size: 11px">Confirm your account by verifying the link <br> sent to your email address</p>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="m-auto">
+                                <a href="#watch_video">
+                                    <% if(current_verify_step < 2) { %>
+                                        <div class="progress-step">2</div>
+                                    <% } else { %>
+                                        <img src="img/pagePicture/tic.png" alt="">
+                                    <% } %>
+                                </a>
+                            </div>
+                            <div class="m-top-10">
+                                <button style="background: #efefef;color: blue;border: none;border-radius: 16px;height: 22px;font-size: 11px;"><span>200 XP</span></button>
+                            </div>
+                            <div class="m-top-10">
+                                <h6 style="font-size: 13px;">Watch Intro Video</h6>
+                                <p style="font-size: 11px">Watch our Onboarding Video and get to know the platform</p>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="m-auto">
+                                <a href="#profile_completion">
+                                    <% if(current_verify_step < 3) { %>
+                                        <div class="progress-step">3</div>
+                                    <% } else { %>
+                                        <img src="img/pagePicture/tic.png" alt="">
+                                    <% } %>
+                                </a>
+                            </div>
+                            <div class="m-top-10">
+                                <button style="background: #efefef;color: blue;border: none;border-radius: 16px;height: 22px;font-size: 11px;"><span>400 XP</span></button>
+                            </div>
+                            <div class="m-top-10">
+                                <h6 style="font-size: 13px;">Complete your Profile</h6>
+                                <p style="font-size: 11px">Fill out your profile to find the right Mentor for you</p>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="m-auto">
+                                <a href="#men_matching">
+                                    <% if(current_verify_step < 4) { %>
+                                        <div class="progress-step">4</div>
+                                    <% } else { %>
+                                        <img src="img/pagePicture/tic.png" alt="">
+                                    <% } %>
+                                </a>
+                            </div>
+                            <div class="m-top-10">
+                                <button style="background: #efefef;color: blue;border: none;border-radius: 16px;height: 22px;font-size: 11px;"><span>300 XP</span></button>
+                            </div>
+                            <div class="m-top-10">
+                                <h6 style="font-size: 13px;">Get your Mentor match</h6>
+                                <p style="font-size: 11px">Our Matching algorithm suggest you your potential mentors</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<% } %>

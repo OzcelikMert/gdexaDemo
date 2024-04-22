@@ -1,0 +1,209 @@
+<div class="container-fluid e_page mentor-matching" id="men_matching" style="display:none;">
+    <div>
+        <div class="row">
+            <% current_verify_step = 4; %>
+            <%- include('progress/verify'); %>
+
+            <div class="col-lg-10">
+                <div class="top-badge" style="background: #e0ecf8;">
+                    <div class="w-20">
+                        <img src="./img/mentor-matching-top-badge.png">
+                    </div>
+                    <div class="w-80 ml-3 pt-3">
+                        <p>
+                            <b>
+                                Based on our algorithm these are the mentors which fits best to your career goals. <br>
+                                Not happy with your match? Pick you mentor <a href="#men_matching_2">manually <span data-feather="arrow-right" class="nav-icon"></span></a>
+                            </b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-10 mb-25 pt-2 px-3 p-bottom-100">
+                <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <div class="card">
+                            <div class="card-body text-center pt-30 px-15 pb-0">
+                                <div class="account-profile-cards  ">
+                                    <div style="display: flex; justify-content: flex-end;position:inherit;margin-top: -17px">
+                                        <span style="border-radius: 3px!important;" class="badge badge-success menuItem">New</span>
+                                    </div>
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <img class="ap-img__main bg-opacity-primary  wh-120 rounded-circle mb-3 " src="img/ekremnamazci.png" alt="profile">
+                                        <p class="request-my-dashoard">85%</p>
+                                    </div>
+                                    <div class="ap-nameAddress">
+                                        <h6 class="ap-nameAddress__title">Ekrem Namazci</h6>
+                                        <p class="ap-nameAddress__subTitle fs-14 pt-0 m-0 mt-1">Data & AlI Lead</p>
+                                        <p class="fs-12 pt-0 m-0" style="color: #9299b8;"><i style="margin-left:4px;margin-right: 4px " class="fas fa-map-marker-alt"></i>Microsoft</p>
+                                    </div>
+                                    <div class="ap-button  button-group d-flex justify-content-center flex-wrap pt-20">
+                                        <button type="button" class="btn btn-light border text-capitalize px-25 radius-md">View Details</button>
+                                        <button type="button" class="btn btn-secondary border text-capitalize px-25 radius-md e_mentor_matching_btn" id="mentor_matching_btn"><span data-feather="user-plus"></span> Request</button>
+                                        <button type="button" style="display: none" class="btn btn-green border text-capitalize px-25 radius-md" id="mentor_accepted_btn"><span data-feather="user-plus"></span> Accepted</button>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer mt-20 pt-20 pb-15 px-0">
+                                    <div class="profile-overview d-flex justify-content-center flex-wrap">
+                                        <span class="fs-14 text-info font-weight-bold">Mentoring Topics</span>
+                                        <p class="fs-10 px-4">Big Data & Analytics, Career Development, Cloud & SaaS Technology, International Business, Leadership</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <div class="card">
+                            <div class="card-body text-center pt-30 px-15 pb-0">
+                                <div class="account-profile-cards  ">
+                                    <div style="display: flex; justify-content: flex-end;position:inherit;margin-top: -17px">
+                                        <span style="border-radius: 3px!important;" class="badge badge-success menuItem">New</span>
+                                    </div>
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <img class="ap-img__main bg-opacity-primary  wh-120 rounded-circle mb-3 " src="img/hennerschliebs.png" alt="profile">
+                                        <p class="request-my-dashoard">82%</p>
+                                    </div>
+                                    <div class="ap-nameAddress">
+                                        <h6 class="ap-nameAddress__title">Henner Schliebs</h6>
+                                        <p class="ap-nameAddress__subTitle fs-14 pt-0 m-0 mt-1">Regional Vice President</p>
+                                        <p class="fs-12 pt-0 m-0" style="color: #9299b8;"><i style="margin-left:4px;margin-right: 4px " class="fas fa-map-marker-alt"></i>SAP</p>
+                                    </div>
+                                    <div class="ap-button  button-group d-flex justify-content-center flex-wrap pt-20">
+                                        <button type="button" class="btn btn-light border text-capitalize px-25 radius-md">View Details</button>
+                                        <button type="button" class="btn btn-secondary border text-capitalize px-25 radius-md"><span data-feather="user-plus"></span> Request</button>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer mt-20 pt-20 pb-15 px-0">
+                                    <div class="profile-overview d-flex justify-content-center flex-wrap">
+                                        <span class="fs-14 text-info font-weight-bold">Mentoring Topics</span>
+                                        <p class="fs-10 px-4">Career Development, HR & People Management, Leadership, Sales & Marketing, Softskills</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <div class="card">
+                            <div class="card-body text-center pt-30 px-15 pb-0">
+                                <div class="account-profile-cards  ">
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <img class="ap-img__main bg-opacity-primary  wh-120 rounded-circle mb-3 " src="img/mohghadban.png" alt="profile">
+                                        <p class="request-my-dashoard">80%</p>
+                                    </div>
+                                    <div class="ap-nameAddress">
+                                        <h6 class="ap-nameAddress__title">Moh Ghadban</h6>
+                                        <p class="ap-nameAddress__subTitle fs-14 pt-0 m-0 mt-1">Global Process Automation & Analytics Lead</p>
+                                        <p class="fs-12 pt-0 m-0" style="color: #9299b8;"><i style="margin-left:4px;margin-right: 4px " class="fas fa-map-marker-alt"></i>Adidas</p>
+                                    </div>
+                                    <div class="ap-button  button-group d-flex justify-content-center flex-wrap pt-20">
+                                        <button type="button" class="btn btn-light border text-capitalize px-25 radius-md">View Details</button>
+                                        <button type="button" class="btn btn-secondary border text-capitalize px-25 radius-md"><span data-feather="user-plus"></span> Request</button>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer mt-20 pt-20 pb-15 px-0">
+                                    <div class="profile-overview d-flex justify-content-center flex-wrap">
+                                        <span class="fs-14 text-info font-weight-bold">Mentoring Topics</span>
+                                        <p class="fs-10 px-4">Big Data & Analytics, Digital Transformation, International Business, Leadership, Robotic Process Automation, Software Engineering</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <div class="card">
+                            <div class="card-body text-center pt-30 px-15 pb-0">
+                                <div class="account-profile-cards  ">
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <img class="ap-img__main bg-opacity-primary  wh-120 rounded-circle mb-3 " src="img/marilyntan.png" alt="profile">
+                                        <p class="request-my-dashoard-calt">79%</p>
+                                    </div>
+                                    <div class="ap-nameAddress">
+                                        <h6 class="ap-nameAddress__title">Marilyn Tan</h6>
+                                        <p class="ap-nameAddress__subTitle fs-14 pt-0 m-0 mt-1">Country Head</p>
+                                        <p class="fs-12 pt-0 m-0" style="color: #9299b8;"><i style="margin-left:4px;margin-right: 4px " class="fas fa-map-marker-alt"></i>Snowflake</p>
+                                    </div>
+                                    <div class="ap-button  button-group d-flex justify-content-center flex-wrap pt-20">
+                                        <button type="button" class="btn btn-light border text-capitalize px-25 radius-md">View Details</button>
+                                        <button type="button" class="btn btn-secondary border text-capitalize px-25 radius-md"><span data-feather="user-plus"></span> Request</button>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer mt-20 pt-20 pb-15 px-0">
+                                    <div class="profile-overview d-flex justify-content-center flex-wrap">
+                                        <span class="fs-14 text-info font-weight-bold">Mentoring Topics</span>
+                                        <p class="fs-10 px-4">Big Data & Analytics, Business Development, Cloud & SaaS Technology, Project Management</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <div class="card">
+                            <div class="card-body text-center pt-30 px-15 pb-0">
+                                <div class="account-profile-cards  ">
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <img class="ap-img__main bg-opacity-primary  wh-120 rounded-circle mb-3 " src="img/sigridrouam.png" alt="profile">
+                                        <p class="request-my-dashoard-calt">76%</p>
+                                    </div>
+                                    <div class="ap-nameAddress">
+                                        <h6 class="ap-nameAddress__title">Dr. Sigrid Rouam, PhD</h6>
+                                        <p class="ap-nameAddress__subTitle fs-14 pt-0 m-0 mt-1">Head of Data Science</p>
+                                        <p class="fs-12 pt-0 m-0" style="color: #9299b8;"><i style="margin-left:4px;margin-right: 4px " class="fas fa-map-marker-alt"></i>Credit Suisse</p>
+                                    </div>
+                                    <div class="ap-button  button-group d-flex justify-content-center flex-wrap pt-20">
+                                        <button type="button" class="btn btn-light border text-capitalize px-25 radius-md">View Details</button>
+                                        <button type="button" class="btn btn-secondary border text-capitalize px-25 radius-md"><span data-feather="user-plus"></span> Request</button>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer mt-20 pt-20 pb-15 px-0">
+                                    <div class="profile-overview d-flex justify-content-center flex-wrap">
+                                        <span class="fs-14 text-info font-weight-bold">Mentoring Topics</span>
+                                        <p class="fs-10 px-4">AI/ML Application, Data Science, Digital Finance, HR & People Management, International Business, Leadership</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                        <div class="card">
+                            <div class="card-body text-center pt-30 px-15 pb-0">
+                                <div class="account-profile-cards  ">
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <img class="ap-img__main bg-opacity-primary  wh-120 rounded-circle mb-3 " src="img/karansachdeva.png" alt="profile">
+                                        <p class="request-my-dashoard-calt">72%</p>
+                                    </div>
+                                    <div class="ap-nameAddress">
+                                        <h6 class="ap-nameAddress__title">Karan Sachdeva</h6>
+                                        <p class="ap-nameAddress__subTitle fs-14 pt-0 m-0 mt-1">Director Data and AI, Asia Pacific</p>
+                                        <p class="fs-12 pt-0 m-0" style="color: #9299b8;"><i style="margin-left:4px;margin-right: 4px " class="fas fa-map-marker-alt"></i>IBM</p>
+                                    </div>
+                                    <div class="ap-button  button-group d-flex justify-content-center flex-wrap pt-20">
+                                        <button type="button" class="btn btn-light border text-capitalize px-25 radius-md">View Details</button>
+                                        <button type="button" class="btn btn-secondary border text-capitalize px-25 radius-md"><span data-feather="user-plus"></span> Request</button>
+                                    </div>
+                                </div>
+
+                                <div class="card-footer mt-20 pt-20 pb-15 px-0">
+                                    <div class="profile-overview d-flex justify-content-center flex-wrap">
+                                        <span class="fs-14 text-info font-weight-bold">Mentoring Topics</span>
+                                        <p class="fs-10 px-4">AI/ML Application, Big Data & Analytics, Business Development, HR & People Management</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

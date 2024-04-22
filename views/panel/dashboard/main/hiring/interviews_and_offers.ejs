@@ -1,0 +1,125 @@
+<% var board_data = [
+    {"img": "img/pagePicture/vodofone-logo.png","img2": "img/ashleysmith.png", "title": "Vodafone Germany", "alt": "Recklinghausen", "type": 'Head of Business Development B2C (m/w/d)'},
+    {"img": "img/pagePicture/ey-logo.png","img2": "img/ashleysmith.png", "title": "EY","alt": "Singapore", "type": 'Digital Brand Strategist (m/f/d)'},
+    {"img": "img/pagePicture/kpmg-logo.png","img2": "img/ashleysmith.png", "title": "KPMG Germany", "alt": "Düsseldorf", "type": 'Senior Product Designer- PropTech Startup'},
+];
+var job = {
+    name: 'KPMG Germany',
+    title: 'Senior Product Designer - PropTech Startup',
+    alt: 'Dússeldorf',
+    location: 'Essen, Nordrhein-Westfalen, Deutschland',
+    type: 'Office',
+    time: 'Full-time',
+    img: 'img/pagePicture//kpmg-logo.png'
+}
+
+%>
+<style>
+    .avatar_image{
+        width: 100px;height: 100px;box-shadow: 0 0 0 4px #eaecf2;
+    }
+    .avatar{
+        padding-left: 30px;
+    }
+    .btn-o{
+        height: 50px;
+        width: 50px;
+    }
+    .top-gradient {
+        height: 30px;
+        background: rgb(49,168,230);
+        background: linear-gradient(90deg, rgba(49,168,230,1) 0%, rgba(94,138,255,1) 44%, rgba(122,158,255,1) 100%);
+        border-radius: 10px 10px 0 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+</style>
+
+<div class="container-fluid e_page" id="interviews_and_offers" style="display:none;">
+    <div class="row">
+        <div class="col-12">
+            <div class="row m-2 mt-5">
+                <div class="col-12 pb-2">
+                    <h2>Your Interview offerings</h2>
+                    <p>Here you can see your interview offers</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="row m-0 p-0">
+                <% board_data.forEach(function(e){ %>
+                    <div class="col-md-4 mt-4">
+
+                        <div class="user-group p-30 radius-xl bg-white shadow card-scale-hover">
+                            <div class="d-flex  justify-content-center pr-3">
+                                <div class="avatar">
+                                    <img class="mr-20 rounded-circle bg-opacity-primary avatar_image" src="<%- e.img %>" alt="author" style="z-index: 9;">
+                                    <img class="mr-20 rounded-circle bg-opacity-primary avatar_image" src="<%- e.img2 %>" alt="author" style="margin-left: -30px">
+                                </div>
+                            </div>
+                            <div class="text-center mt-5">
+                                <h6><%- e.title %></h6>
+                                <p class="fs-14"><%- e.alt %></p>
+                                <h6 class="fs-15 pt-2"><%- e.type %></h6>
+                                <hr>
+                                <div class="buttons d-flex justify-content-around text-center" style="margin: 0 auto; width:150px">
+                                    <button class="btn btn-o btn-success rounded-circle">
+                                        <i class="fa fa-check m-0"></i>
+                                    </button>
+                                    <button class="btn btn-o btn-light-2 rounded-circle">
+                                        <i class="fa fa-times m-0"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="row m-2 mt-5">
+                <div class="col-12 pb-2">
+                    <h2>Job offerings</h2>
+                    <p>Here you can see your job offers</p>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="user-group p-30 radius-xl bg-white shadow card-scale-hover position-relative">
+                        <div class="top-gradient w-100">
+
+                        </div>
+                        <div class="d-flex justify-content-lg-between pr-3" style="margin-top: 40px;">
+                            <div class="left d-flex flex-column text-center">
+                                <div class="avatar">
+                                    <img class="mr-20 rounded-circle bg-opacity-primary avatar_image" src="<%- job.img %>" alt="author">
+                                </div>
+                                <h6 class="pt-3"><%- job.name %></h6>
+                                <p class="fs-14"><%- job.alt %></p>
+                            </div>
+                            <div class="right">
+                                <h3><%- job.title %></h3>
+                                <p class="fs-16 pb-3 pt-4 fw-400 mb-0"> <i class="pr-2 fas fa-map-marker-alt"></i> <%- job.location %></p>
+                                <p class="fs-16 pb-3 fw-400 mb-0">      <i class="pr-2 fas fa-globe"></i> <%- job.type %></p>
+                                <p class="fs-16 pb-3 fw-400 mb-0">      <i class="pr-2 fas fa-clock"></i> <%- job.time %></p>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-5">
+                            <hr>
+                            <div class="buttons d-flex justify-content-around text-center" style="width: 300px;margin: 0 auto">
+                                <button class="btn btn-info">Accept Offering</button>
+                                <button class="btn btn-info">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

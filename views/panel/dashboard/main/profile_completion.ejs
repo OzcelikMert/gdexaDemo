@@ -1,0 +1,100 @@
+<div class="container-fluid e_page" id="profile_completion" style="display:none;">
+    <div class="row">
+        <% current_verify_step = 3; %>
+        <%- include('progress/verify'); %>
+        <div class="col-md-3 mb-25">
+            <%- include('profile_completion/navigation'); %>
+            <%- include('profile_completion/contact_info'); %>
+        </div>
+
+        <div class="col-md-8">
+            <div class="row p-0 m-0">
+                <div class="col-md-12">
+                    <div class="card card-default card-md mb-4" style="width: 88.45%">
+                        <div class="card-header">
+                            <h5 class="font-weight-bold">Edit Profile</h5>
+                            <p class="small pt-1 mb-0">Set up your personal information</p>
+                        </div>
+                        <div class="card-body py-md-25">
+                            <div class="row m-0 pt-0">
+                                <div class="col-8">
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput" class="color-dark fs-14 fw-500 align-center">Name</label>
+                                            <input type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15" id="formGroupExampleInput" value="Ashley Smith">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput2" class="color-dark fs-14 fw-500 align-center">Phone Number</label>
+                                            <input type="tel" class="form-control ih-medium ip-gray radius-xs b-light px-15" id="formGroupExampleInput2" value="+440 2546 5236">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="countryOption" class="il-gray fs-14 fw-500 align-center">Country</label>
+                                            <select class="form-control px-15" id="countryOption">
+                                                <option>Please select</option>
+                                                <option>ABD</option>
+                                                <option>Germany</option>
+                                                <option>Turkey</option>
+                                                <option>England</option>
+                                                <option>Japanese</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="countryOption" class="il-gray fs-14 fw-500 align-center">City</label>
+                                            <select class="form-control px-15" id="countryOption">
+                                                <option>Please Select</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput2" class="color-dark fs-14 fw-500 align-center">University</label>
+                                            <input type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15" id="formGroupExampleInput2" value="Example">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput2" class="color-dark fs-14 fw-500 align-center">Field of study</label>
+                                            <input type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15" id="formGroupExampleInput2" value="Example">
+                                        </div>
+                                        <div class="row mt-0 p-0">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="countryOption" class="il-gray fs-14 fw-500 align-center">Time Prenfences</label>
+                                                    <select class="form-control px-15" id="countryOption">
+                                                        <option>Please Select</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="t99" class="il-gray fs-14 fw-500 align-center">Time Zone</label>
+                                                    <select class="form-control px-15" id="countryOption">
+                                                        <option>Please Select</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput" class="color-dark fs-14 fw-500 align-center">LinkedIn Profile</label>
+                                            <input type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15" id="formGroupExampleInput" placeholder="www.example.com">
+                                        </div>
+
+                                        <div class="layout-button mt-25">
+                                            <a href="#profile_completion_2"><button type="button" class="btn btn-info btn-default btn-squared px-30">Update Profile</button></a>
+                                            <button type="button" class="btn btn-light btn-squared border-normal bg-normal px-20 ">Cancel</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

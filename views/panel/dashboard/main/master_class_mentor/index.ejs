@@ -1,0 +1,197 @@
+<div class="container-fluid e_page" id="mentor_master_class" style="display:none;">
+    <h4 style="margin-top: 50px">Welcome to your Mentoring Space with Ashley Smith</h4>
+    <p style="margin-top: 10px">Here you can schedule and manage your Mentoring sessions</p>
+    <div style="margin-top: 5rem">
+        <div class="row">
+            <div class="col-lg-10 col-md-12 col-sm-12  col-xs-12 mb-25" style="margin-top: 20px; padding-right: 0">
+                <div class="social-overview-wrap">
+                    <div class="card border-0">
+                        <div class="container-fluid" >
+                            <div class="row">
+                                <div class="card-body">
+                                    <div class="tabs-to-dropdown">
+                                        <div class="row">
+                                            <div class="col-4 p-left-70" >
+                                                <div style="position: relative;margin-top: -79px;">
+                                                    <a href="" class="d-flex">
+                                                        <div>
+                                                            <img src="img/ekremnamazci.png"  width="95" alt="">
+                                                            <img style="margin-left: -2.1rem" src="img/ashleysmith.png" width="95" alt="">
+                                                        </div>
+                                                        <p class="tabs-imgs-percen">85%</p>
+                                                    </a>
+                                                    <p class="tabs-masterclass-img-p">Ekrem Namazci <span>&</span> Ashley Smith</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-8" style="margin-left: -6rem;">
+                                                <div class="nav-wrapper d-flex align-items-center justify-content-between p-top-45">
+                                                    <ul class="nav  d-none d-md-flex" id="pills-tab" role="tablist">
+                                                        <li class="nav-item" role="presentation">
+                                                            <a  class="nav-link active tabs-nav-link-a" id="pills-company-tab2" data-toggle="pill" href="#pills-masterclass2" role="tab" aria-controls="pills-company" aria-selected="true">Masterclass</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation" style="padding-left: 1.5rem;">
+                                                            <a  class="nav-link tabs-nav-link-a " id="pills-product-tab2" data-toggle="pill" href="#pills-mentoring-sessions2" role="tab" aria-controls="pills-product" aria-selected="false">Mentoring Sessions</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation" style="padding-left: 1.5rem;">
+                                                            <a  class="nav-link tabs-nav-link-a" id="pills-news-tab2" data-toggle="pill" href="#pills-mentoring-path2" role="tab" aria-controls="pills-news" aria-selected="false">Mentoring Path</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation"style="padding-left: 1.5rem;">
+                                                            <a  class="nav-link tabs-nav-link-a" id="pills-contact-tab2" data-toggle="pill" href="#pills-notes2" role="tab" aria-controls="pills-contact" aria-selected="false">Notes</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation"style="padding-left: 1.5rem;">
+                                                            <a  class="nav-link tabs-nav-link-a" id="pills-notes-tab2" data-toggle="pill" href="#pills-chat2" role="tab" aria-controls="pills-notes" aria-selected="false">Chat</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <p style="border-bottom: 1px solid #ededed"></p>
+                                        </div>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <%- include('tabs/chat.ejs')%>
+                                            <%- include('tabs/master_class.ejs')%>
+                                            <%- include('tabs/mentoring_path.ejs')%>
+                                            <%- include('tabs/mentoring_session.ejs')%>
+                                            <%- include('tabs/notes.ejs')%>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<modal>
+    <div class="modal fade" id="AddNewActivity" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content" style="border-radius: 10px!important;">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-size: 15px;color:black!important;font-weight: 600;">Add New Activity</h4>
+                    <button  style="background: #d3d3d3d4;padding-left: 6px;padding-right: 6px;border-radius: 118px;padding-top: 2px;padding-bottom: 3px;" type="button" class="close " data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group" style="margin-bottom: 22px">
+                            <input style=" border-radius: 6px!important;" type="text" class="form-control ih-medium ip-light radius-xs b-light px-15" id="a10" placeholder="Title">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 22px">
+                            <select class="form-control px-15" id="exampleFormControlSelect1" style="border-radius: 6px;!important;">
+                                <option>Content Type</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-element-textarea mb-20" style="margin-bottom: 22px;">
+                            <textarea style="height: 125px;border-radius: 6px!important;" class="form-control" id="exampleFormControlTextarea1" placeholder="Description" rows="3"></textarea>
+                        </div>
+                    </form>
+                    <div class="row d-flex flex-column m-top-30">
+                        <div class="col-12">
+                            <div class="checkbox-theme-default custom-checkbox ">
+                                <input class="checkbox" type="checkbox" id="check-grid-6">
+                                <label for="check-grid-6">
+                                    <span class="checkbox-text" style="padding-left: 10px; ">Submission needed</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-top-30">
+                        <div>
+                            <h5>Content type</h5>
+                        </div>
+                        <div class="radio-horizontal-list d-flex m-top-15" >
+                            <div class="radio-theme-default custom-radio ">
+                                <input class="radio" type="radio" name="radio-optional" value="0" id="radio-hl1">
+                                <label for="radio-hl1">
+                                    <span class="radio-text">Video</span>
+                                </label>
+                            </div>
+                            <div class="radio-theme-default custom-radio ">
+                                <input class="radio" type="radio" name="radio-optional" value="0" id="radio-hl2">
+                                <label for="radio-hl2">
+                                    <span class="radio-text">Course</span>
+                                </label>
+                            </div>
+                            <div class="radio-theme-default custom-radio ">
+                                <input class="radio" type="radio" name="radio-optional" value="0" id="radio-hl3">
+                                <label for="radio-hl3">
+                                    <span class="radio-text">Blog</span>
+                                </label>
+                            </div>
+                            <div class="radio-theme-default custom-radio ">
+                                <input class="radio" type="radio" name="radio-optional" value="0" id="radio-hl5">
+                                <label for="radio-hl4">
+                                    <span class="radio-text">Paper</span>
+                                </label>
+                            </div>
+                            <div class="radio-theme-default custom-radio ">
+                                <input class="radio" type="radio" name="radio-optional" value="0" id="radio-hl4">
+                                <label for="radio-hl5">
+                                    <span class="radio-text">Meeting</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-flex m-top-40">
+                            <button class="btn btn-info">Add new Activity</button>
+                            <button class="btn btn-info m-left-30" style="border: 1px solid #00000017; background: white; color: #00000075" type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addNewNote" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content" style="border-radius: 10px;!important;">
+                <div class="modal-header" style="border:none;">
+                    <div class="d-flex">
+                        <div class="radio-horizontal-list d-flex m-top-10 ">
+                            <h4 class="modal-title" style="font-size: 15px;color:black!important;font-weight: 600;">Add New Note</h4>
+                        </div>
+                        <div class="radio-horizontal-list d-flex m-top-10 p-left-50" >
+                            <div class="radio-theme-default custom-radio ">
+                                <input class="radio" type="radio" name="radio-optional" value="0" id="radio-hl6">
+                                <label for="radio-hl6">
+                                    <span class="radio-text">Private</span>
+                                </label>
+                            </div>
+                            <div class="radio-theme-default custom-radio ">
+                                <input class="radio" type="radio" name="radio-optional" value="0" id="radio-hl7">
+                                <label for="radio-hl7" class="p-left-25">
+                                    <span class="radio-text">Public</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button  style="background: #d3d3d3d4;padding-left: 6px;padding-right: 6px;border-radius: 118px;padding-top: 2px;padding-bottom: 3px;" type="button" class="close " data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" style="margin-top: -40px">
+                    <form action="#">
+                        <div class="form-group form-element-textarea mb-20" style="margin-bottom: 22px;">
+                            <textarea style="height: 100px;border-radius: 6px!important;" class="form-control" id="exampleFormControlTextarea2" placeholder="Description" rows="3"></textarea>
+                        </div>
+                    </form>
+                    <div class="m-top-30">
+                        <div class="d-flex">
+                            <button class="btn btn-info">Add Note</button>
+                            <button class="btn btn-info m-left-30" style="border: 1px solid #00000017; background: white; color: #00000075" type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</modal>

@@ -1,0 +1,48 @@
+<div class="container-fluid e_page" id="mentor_profile_completion_2" style="display:none;">
+    <div class="row">
+        <% current_verify_step_2 = 1; %>
+        <%- include('progress/mentor_verify'); %>
+        <div class="col-md-3 mb-25">
+            <%- include('profile_completion/mentor_navigation'); %>
+            <%- include('profile_completion/mentor_contact_info'); %>
+        </div>
+
+        <div class="col-md-8">
+            <div class="row p-0 m-0">
+                <div class="col-md-12">
+                    <div class="card card-default card-md mb-4" style="width: 88.45%">
+                        <div class="card-header">
+                            <h5 class="font-weight-bold">Edit Profile</h5>
+                            <p class="small pt-1 mb-0">Set up your skilling profile</p>
+                        </div>
+                        <div class="card-body py-md-25">
+                            <div class="row m-0 pt-0">
+                                <div class="col-8">
+                                    <form action="#">
+                                        <div class="form-group" style="padding-top: 10px">
+                                            <label for="formGroupExampleInput" class="color-dark fs-14 fw-500 align-center">Short Biographie</label>
+                                            <input type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15 " id="formGroupExampleInput" value="Growing up as a child of a Turkish working-class family in Germany, Ekrem has always shaped his spirited multi-cultural personality throughout his global work-life experience. After spending 5 years in Asia, where he has built-up 2 subsidiaries from scratch, he has been hired in June 2019 by Microsoft for the Data & AI product sales leadership role for strategic customers in Germany. Besides, his free time belongs to the EdTech startup GDEXA, where he acts as co-founder and leading force of the free global mentorship program for students and young professionals.">
+                                        </div>
+                                        <div class="form-group" style="padding-top: 10px">
+                                            <label for="formGroupExampleInput2" class="color-dark fs-14 fw-500 align-center">Industries</label>
+                                            <input type="tel" class="form-control ih-medium ip-gray radius-xs b-light px-15" id="formGroupExampleInput2" value="Retail, Consulting, Automotive">
+                                        </div>
+                                        <div class="form-group" style="padding-top: 10px">
+                                            <label for="choose_desired_skills" class="color-dark fs-14 fw-500 align-center">Mentoring Topics</label>
+                                            <input type="tel" class="form-control ih-medium ip-gray radius-xs b-light px-15" id="formGroupExampleInput2" value="UI/UX, Branding, Product Design, Web Design">
+                                        </div>
+                                        <div class="layout-button mt-25" style="padding-top: 10px">
+                                            <a href="#mentor_profile_completion_3"><button type="button" class="btn btn-info btn-default btn-squared px-30" id="profile_update_btn">Update Profile</button></a>
+                                            <button type="button" class="btn btn-light btn-squared border-normal bg-normal px-20 ">Cancel</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

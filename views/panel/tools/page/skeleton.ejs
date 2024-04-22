@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+   <head>
+       <%- include('head.ejs') %>
+   </head>
+
+   <body class="layout-light side-menu overlayScroll" style="display: none">
+       <%- include('./navbar/header.ejs') %>
+       <main class="main-content">
+           <%- include('./navbar/sidebar_admin.ejs') %>
+           <%- include('./navbar/sidebar_mentor.ejs') %>
+           <%- include('./navbar/sidebar_talent.ejs') %>
+           <%- include('./navbar/sidebar_hr.ejs') %>
+           <div class="contents">
+               <%- include('../../dashboard/index.ejs') %>
+           </div>
+           <%- include('./footer/footer.ejs') %>
+       </main>
+       <div id="overlayer">
+           <span class="loader-overlay" style="z-index: 99999999999 !important">
+               <div class="atbd-spin-dots spin-lg">
+                   <span class="spin-dot badge-dot dot-primary"></span>
+                   <span class="spin-dot badge-dot dot-primary"></span>
+                   <span class="spin-dot badge-dot dot-primary"></span>
+                   <span class="spin-dot badge-dot dot-primary"></span>
+               </div>
+           </span>
+       </div>
+       <div class="overlay-dark-sidebar"></div>
+       <div class="customizer-overlay"></div>
+       <%- include('scripts.ejs') %>
+
+   </body>
+</html>

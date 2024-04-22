@@ -1,0 +1,67 @@
+<div class="container-fluid e_page hackathons" id="workshops" style="display:none;">
+        <div class="row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="m-top-100">
+                            <h3 class="breadcrumb-title text-dark">Workshops</h3>
+                            <small class="mt-4 text-muted">Join an our Workshops to increase your Job-Ready-Index</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-5">
+                <div class="row events" style="width: 85%;">
+                    <% var hackathons_data = [
+                        {"duration":"2 hours", "title": "Interview Training", "start_date": "2 hours", "progress": 84, "booked": 40},
+                        {"duration":"2 hours", "title": "Corporate Culture", "start_date": "17 Jan 2022", "progress": 25, "booked": 20},
+                        {"duration":"1 hours", "title": "Growth Mindset", "start_date": "01 Feb 2022", "progress": 84, "booked": 40},
+                        {"duration":"3 hours", "title": "Lifelong Learning", "start_date": "07 Feb 2022", "progress": 15, "booked": 10}
+                    ]; %>
+                    <% hackathons_data.forEach(function(e){ %>
+                        <div class="col-md-5 mb-4">
+                            <div class="card h-100">
+                                <h4 class="card-title text-capitalize p-4" style="background: #f8f9fb;"><%-e.title%>
+                                    <div style="margin-top: -15px;position: relative;float: right;">
+                                        <button class="mb-1 tabs-profile-progress-bar-btn">+ 200 XP</button>
+                                    </div>
+                                </h4>
+
+                                <div class="card-body">
+                                    <div class="event-info">
+                                        <table>
+                                            <tr>
+                                                <th width="50%">Start Date</th>
+                                                <th width="30%">Duration</th>
+                                                <th width="20%">Location</th>
+                                            </tr>
+                                            <tr>
+                                                <td><%-e.start_date%></td>
+                                                <td><%-e.duration%></td>
+                                                <td>Video course</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="w-100 mt-4">
+                                        <div class="progress rounded" style="height: 5px;width: 90%;">
+                                            <div class="progress-bar progress_bar_stick" role="progressbar" style="width: <%-e.progress%>%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <small class="text-muted float-right" style="margin-top: -12px;"><%-e.progress%>%</small>
+                                    </div>
+                                    <small class="mt-2" style="color: #838383a8;"><%-e.booked%> / 50 seats booked</small>
+                                </div>
+                                <div class="card-footer">
+                                    <small style="color: #838383a8;">Joined participants</small>
+                                    <br>
+                                    <div class="float-left">
+                                        <img src="img/hackathons-joineds.png">
+                                    </div>
+                                    <a href="#workshop_detail" class="btn btn-secondary border-0 float-right">Join workshop</a>
+                                </div>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+</div>

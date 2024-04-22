@@ -1,0 +1,124 @@
+<%var tags = ["Backend Developer","Fullstack Developer","Product Engineer","Product Developer"]; %>
+<style>
+    .dropdown-bottomRight{
+        right: auto !important;
+        left: unset !important;
+    }
+</style>
+
+<div class="container-fluid e_page" id="job_board_details" style="display:none;">
+    <div class="row">
+        <div class="col-12">
+            <div class="row m-2 mt-5">
+                <div class="col-12 pb-2">
+                    <h2>Find your Dream Job</h2>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <div class="search-result global-shadow rounded-pill bg-white">
+                        <form action="javascript:void(0)" class="d-flex align-items-center justify-content-between">
+                            <div class="border-right d-flex align-items-center w-100 pl-25 pr-sm-25 pr-0 py-1">
+                                <i class="fa fa-search"></i>
+                                <input class="form-control border-0 box-shadow-none" type="search" placeholder="Type and search" aria-label="Jobtitle or Keyword">
+                                <input class="form-control border-0 box-shadow-none" type="search" placeholder="Location" aria-label="Jobtitle or Keyword">
+                            </div>
+                            <button type="button" class="border-0 bg-transparent px-25 bg-info" style="height: 50px;border-radius: 0 10px 10px 0;color: white;">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="search-keyword mt-20 mb-30">
+                        <p style="color: #afb5cb;">Jobs which might fit to your profile</p>
+                        <ul class="nav m-n1" id="pills-tab" role="tablist">
+                            <% tags.forEach(function(e){ %>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="javascript:void(0)" role="tab" aria-controls="pills-home" aria-selected="true"><%-e%></a>
+                                </li>
+                            <% });%>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8 mt-4 ml-3 mb-5">
+            <div class="user-group p-50 pt-75 radius-xl bg-white shadow">
+                <div class="top d-flex mt-3">
+                    <div class="avatar" style="margin-top: -25px">
+                        <img class="mr-20 wh-70 rounded-circle bg-opacity-primary" src="img/hiring/1.png" alt="author" style="width: 120px;height: 120px;box-shadow: 0 0 0 4px #eaecf2;">
+                    </div>
+                    <div class="details w-100">
+                        <div class="middle d-flex justify-content-between">
+                            <div class="m-left-5">
+                                <a href="#learning_paths"><h2  class="mt-0 fw-600">Cloud-Native Developer-Consultant (m/w/d)</h2></a>
+                                <p style="color: #95a5a6;padding-top: 10px;">Thinktecture AG</p>
+                            </div>
+                            <div class="user-progress pr-3">
+                                <div class="cicrcle-progress pr-md" data-value="85">
+                                    <div class="cicrcle-progress-body">
+                                        <div class="middle-circle"></div>
+                                        <div class="progress-spinner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="position: absolute;right: 45px;top: 10px;">
+                    <div class="dropdown dropdown-click">
+                        <button class="btn-link border-0 bg-transparent p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i style="font-size: 19px;color: #babfd9;" class="fas fa-ellipsis-h"></i>
+                        </button>
+                        <div class="dropdown-default dropdown-bottomRight dropdown-menu-left dropdown-menu">
+                            <a class="dropdown-item" href="#">Increase Job Ready index</a>
+                            <a class="dropdown-item" href="#">...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom pt-4">
+                    <div class="w-75" style="display: grid;grid-template-columns: 1fr 1fr">
+                        <p class="fs-14 pb-3 fw-600 mb-0"><i class="fas fa-map-marker-alt"></i> Karlsruhe, Baden-VWürttemberg, Deutschland</p>
+                        <p class="fs-14 pb-3 fw-600 mb-0 ml-5"><i class="fa fa-cog"></i><span class="ml-2"> IT-Services und IT-Consulting</span></p>
+                        <p class="fs-14 pb-3 fw-600 mb-0"><i class="fas fa-globe"></i> Hybrid or Remote</p>
+                        <p class="fs-14 pb-3 fw-600 mb-0 ml-5"><i class="fa fa-user"></i><span class="ml-2"> 201-500 Beschäftigte</span></p>
+                    </div>
+                    <div class="buttons d-flex">
+                        <button class="btn-primary btn btn-info mr-3 mt-2 ">Apply for job</button>
+                        <button class="btn-primary btn btn-light mr-3 mt-2 ">Save for later</button>
+
+                    </div>
+                </div>
+
+                <div class="body mt-50">
+
+                    <h5 class="pb-3">About us</h5>
+                    <p class="pb-3 fs-15">As an exclusive IT consultancy, we provide innovativelT services and high-performance technology solutions, for market-
+                        leading and data driven top customers in the insurance and banking sectors. We specialize in the most advanced digital projects
+                        and enjoy the reputation of always providing our customers with the decisive competitive edge for shaping their future. Our
+                        company is characterized by a flat and agile structure with an international, diverse as well as modern corporate culture. The
+                        company is headquartered in Kiel, Germany with offices and/or training centres in Düsseldorf, Vienna and Hyderabad (India).
+                        Our employees are the source of our success, and we value collaboration. No matter where you are, you will be part of a
+                        dedicated, diverse community and you will be able to develop your full potential.
+                    </p>
+
+                    <h5 class="pb-3">Your benefits</h5>
+                    <p class="pb-3 fs-15">If you are ready to take on responsibility, you have come to the right place and you will receive above-average financial rewards,
+                        training and support. Not only will you keep up to date with the latest technology, but you will also have the opportunity to
+                        develop individually. In your career with us, you can constantly expand your own area of responsibility and work creatively and
+                        independently. A continuous learning curve is guaranteed. In addition to exciting professional perspectives, we offer a healthy
+                        work-life balance and motivating incentives. You will be immersed in an appreciative environment that focuses on transparency,
+                        fairness and fun at work. The positive atmosphere in the company is usually reinforced by team events such as sailing, lake
+                        festivals, Oktoberfest and shared skiing. In times of pandemic, the possibility of working from home protects your health.
+                        <br><br>
+                        - Type of employment: permanent employment <br>
+                        - Workload: Full-time<br>
+                        - Places of work: remote or hybrid at the beON Office in Düsseldorf<br>
+                        - Languages: English; German is an asset<br>
+                        - Start: as soon as possible<br>
+                        - Salary: Salary range is open upwards with additional bonus opportunities and salary increases<br>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

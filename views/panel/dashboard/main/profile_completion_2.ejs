@@ -1,0 +1,90 @@
+<div class="container-fluid e_page" id="profile_completion_2" style="display:none;">
+    <div class="row">
+        <% current_verify_step = 3; %>
+        <%- include('progress/verify'); %>
+        <div class="col-md-3 mb-25">
+            <%- include('profile_completion/navigation'); %>
+            <%- include('profile_completion/contact_info'); %>
+        </div>
+
+        <div class="col-md-8">
+            <div class="row p-0 m-0">
+                <div class="col-md-12">
+                    <div class="card card-default card-md mb-4" style="width: 88.45%">
+                        <div class="card-header">
+                            <h5 class="font-weight-bold">Edit Profile</h5>
+                            <p class="small pt-1 mb-0">Set up your skilling profile</p>
+                        </div>
+                        <div class="card-body py-md-25">
+                            <div class="row m-0 pt-0">
+                                <div class="col-8">
+                                    <form action="#">
+                                        <div class="form-group" style="padding-top: 10px">
+                                            <label for="formGroupExampleInput" class="color-dark fs-14 fw-500 align-center">What would be your Dream Job?</label>
+                                            <input type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15" id="formGroupExampleInput" value="Product Manager">
+                                        </div>
+                                        <div class="form-group" style="padding-top: 10px">
+                                            <label for="formGroupExampleInput2" class="color-dark fs-14 fw-500 align-center">Which company you want to work with?</label>
+                                            <input type="tel" class="form-control ih-medium ip-gray radius-xs b-light px-15" id="formGroupExampleInput2" value="Google,Microsoft">
+                                        </div>
+                                        <div class="form-group" style="padding-top: 10px">
+                                            <label for="formGroupExampleInput2" class="color-dark fs-14 fw-500 align-center">Are you open to be hired?</label>
+                                            <div class="row d-flex flex-column m-top-35" >
+                                                <div class="col-lg-12" >
+                                                    <div class="checkbox-theme-default custom-checkbox ">
+                                                        <input class="checkbox" type="checkbox" id="check-grid-1">
+                                                        <label for="check-grid-1">
+                                                            <span class="checkbox-text" style="padding-left: 10px; font-size: 12px;font-weight: 600; color: #2c2c2cd1">No</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 p-top-20">
+                                                    <div class="checkbox-theme-default custom-checkbox ">
+                                                        <input class="checkbox" type="checkbox" id="check-grid-2">
+                                                        <label for="check-grid-2">
+                                                            <span class="checkbox-text"style="padding-left: 10px; font-size: 12px;font-weight: 600; color: #2c2c2cd1"> Yes, in the next 6 months</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 p-top-20">
+                                                    <div class="checkbox-theme-default custom-checkbox ">
+                                                        <input class="checkbox" type="checkbox" id="check-grid-3">
+                                                        <label for="check-grid-3">
+                                                            <span class="checkbox-text" style="padding-left: 10px; font-size: 12px;font-weight: 600; color: #2c2c2cd1">Yes, I'm the next 12 month</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 p-top-20">
+                                                    <div class="checkbox-theme-default custom-checkbox ">
+                                                        <input class="checkbox" type="checkbox" id="check-grid-4">
+                                                        <label for="check-grid-4">
+                                                            <span class="checkbox-text" style="padding-left: 10px; font-size: 12px;font-weight: 600;color: #2c2c2cd1">Not sure yet</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" style="padding-top: 10px">
+                                            <label for="choose_desired_skills" class="color-dark fs-14 fw-500 align-center">What are your desired skills</label>
+                                            <select name="choose_desired_skills" multiple="multiple">
+                                                <option selected>ui/ux</option>
+                                                <option selected>Branding</option>
+                                                <option selected>Product design</option>
+                                                <option selected>Web design</option>
+                                            </select>
+                                        </div>
+                                        <div class="layout-button mt-25" style="padding-top: 10px">
+                                            <a href="#profile_completion_3"><button type="button" class="btn btn-info btn-default btn-squared px-30" id="profile_update_btn">Update Profile</button></a>
+                                            <button type="button" class="btn btn-light btn-squared border-normal bg-normal px-20 ">Cancel</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

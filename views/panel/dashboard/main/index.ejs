@@ -1,0 +1,369 @@
+<style>
+    .user-group-disable.txt1:after {
+        content: 'Waiting for Mentor approval';
+        background: #f5dbdb;
+        width: 188px;
+        height: 25px;
+        margin-left: 13px;
+        font-size: 13px;
+        border-radius: 10px;
+        padding: 4px;
+        font-weight: 500;
+        color: #f34949;
+        text-align: center;
+    }
+    .ap-img.ra:after {
+        content: 'Request approved';
+        background: #9cf1d8;
+        width: 113px;
+        height: 22px;
+        font-size: 12px;
+        color: #349150;
+        border-radius: 10px;
+        padding-top: 2px;
+        position: absolute;
+        top: 139px;
+    }
+    .ap-img.rp:after {
+        content: 'Request pending';
+        background: #fddda4;
+        width: 113px;
+        height: 22px;
+        font-size: 12px;
+        color: #e38131;
+        border-radius: 10px;
+        padding-top: 2px;
+        position: absolute;
+        top: 139px;
+    }
+</style>
+<div class="container-fluid mt-4 e_page" id="dashboard">
+    <div class="row">
+        <% current_verify_step = 1; %>
+        <%- include('progress/verify'); %>
+        <div class="col-md-4 mb-25">
+            <div class="container .container-verify d-flex justify-content-center align-items-center">
+                <div class="card-verify">
+                    <div class="upper"> </div>
+                    <div class="user-verify text-center">
+                        <div class="profile-verify"> <img src="img/ashleysmith.png" class="rounded-circle" width="80"> </div>
+                    </div>
+                    <div class="text-center" style="margin-top: 69px">
+                        <h4 class="mb-0">Ashley Smith</h4>
+                        <button class="btn text-primary" style="background: #efefef;height: 30px;border-radius: 16px; margin:auto; margin-top: 10px ">Level: <span class="ml-1" id="index_rookie_level">Rookie</span></button>
+                    </div>
+                    <div style="display: flex!important;  !important;justify-content: space-between; margin-top: 38px;">
+                        <p class="mb-1" style="font-size: .77rem; margin-left: 2.3rem;"><span><b id="index_progress_text">100 XP</b> </span></p>
+                        <p class="mb-1" style="font-size: .77rem; margin-right: 2.3rem;"><span> <b id="index_progress_text_2">900 XP</b> to level up</span></p>
+                    </div>
+                    <div class="progress rounded" style="height: 5px;width: 80%;margin: auto; ">
+                        <div id="progressbar_index" class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <button class="btn " style="margin: auto;margin-top: 38px; background: #077dfcdb; color: white;">Check Leaderboard</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+                <div class="social-overview-wrap">
+                    <div class="card border-0">
+                        <div class="card-header" style="position: relative;padding-top: 16px;">
+                            <h5 class="font-weight-bold">Upcoming Events</h5>
+                            <p class="small pt-1">Here are our next events. Webinars and Group Mentoring Sessions.</p>
+                        </div>
+                        <div class="row m-0 mt-2 pb-3">
+                            <div class="col-md-12 e_talks">
+                                <div class="media py-20 pl-20 pr-20 bg-white radius-xl users-list ">
+                                    <div class="media-body d-xl-flex" style="align-items: center;gap: 20px;">
+                                        <div class="qcalender">
+                                            <span class="date" style="color: #212529">23</span>
+                                            <span class="mount" style="color: #212529">Nov</span>
+                                        </div>
+                                        <div class="flex-1 pr-xl-30 ">
+                                            <p><button class="upcoming-webinar-btn"><span class="upcoming-webinar" >Webinar</span></button><button class="upcoming-xp-btn"><span class="upcoming-xp">+ 200 XP</span></button></p>
+                                            <p class="small mb-0"><b>Pimp Your Linkedin Profile</b></p>
+                                        </div>
+                                        <button class="btn  btn-default btn-squared text-capitalize px-20 mb-10 "style="background: #efefef" >View Details</button>
+                                    </div>
+                                </div>
+                                <p style="margin-top: 10px; border-bottom: 1px solid #f2f3f7"></p>
+                            </div>
+                            <div class="col-md-12 e_talks">
+                                <div class="media py-20 pl-20 pr-20 bg-white radius-xl users-list ">
+                                    <div class="media-body d-xl-flex" style="align-items: center;gap: 20px;">
+                                        <div class="qcalender">
+                                            <span class="date" style="color: #212529">29</span>
+                                            <span class="mount" style="color: #212529">Nov</span>
+                                        </div>
+                                        <div class="flex-1 pr-xl-30 ">
+                                            <p><button class="upcoming-webinar-btn"><span class="upcoming-webinar" >Webinar</span></button><button class="upcoming-xp-btn"><span class="upcoming-xp">+ 200 XP</span></button></p>
+                                            <p class="small mb-0"><b>UI & UX Design Trends 2022</b></p>
+                                        </div>
+                                        <button class="btn  btn-default btn-squared text-capitalize px-20 mb-10 "style="background: #efefef" >View Details</button>
+                                    </div>
+                                </div>
+                                <p style="margin-top: 10px; border-bottom: 1px solid #f2f3f7"></p>
+                            </div>
+
+                            <div class="col-md-12 e_talks">
+                                <div class="media py-20 pl-20 pr-20 bg-white radius-xl users-list ">
+                                    <div class="media-body d-xl-flex" style="align-items: center;gap: 20px;">
+                                        <div class="qcalender">
+                                            <span class="date" style="color: #212529">29</span>
+                                            <span class="mount" style="color: #212529">Nov</span>
+                                        </div>
+                                        <div class="flex-1 pr-xl-30 ">
+                                            <p><button class="upcoming-webinar-btn"><span class="upcoming-webinar" >Webinar</span></button><button class="upcoming-xp-btn"><span class="upcoming-xp">+ 200 XP</span></button></p>
+                                            <p class="small mb-0"><b>Future Skills</b></p>
+                                        </div>
+                                        <button class="btn  btn-default btn-squared text-capitalize px-20 mb-10 "style="background: #efefef" >View Details</button>
+                                    </div>
+                                </div>
+                                <p style="margin-top: 10px; border-bottom: 1px solid #f2f3f7"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="margin-left: initial !important;">
+        <div class="row" style="padding-bottom: 30px;">
+            <div class="col-lg-5 mb-25 pt-2 px-3" style="display:none;" id="main_page_you_assign_mentor"  >
+                <div class="social-overview-wrap">
+                    <div class="card border-0">
+                        <div class="card-header" style="position: relative;padding-top: 16px;">
+                            <h5 class="font-weight-bold">Your assigned Mentors</h5>
+                            <p class="small pt-1">Here you can find your assigned mentors</p>
+                            <a href="#men_overview"><button class="btn-sm btn btn-default btn-squared btn-outline-success float-end" style="right: 20px;top: 18px;position: absolute;">View all mentors</button></a>
+                        </div>
+                        <div class="row m-0 mt-2 pb-3">
+                            <div class="col-md-6 mb-25 p-0">
+                                <div class="card border-0">
+                                    <div class="card-body text-center pt-30 px-25 pb-0">
+                                        <div class="account-profile-cards">
+                                            <div class="ap-img ra d-flex justify-content-center">
+                                                <!-- Profile picture image-->
+                                                <img class="ap-img__main bg-opacity-primary  wh-120 rounded-circle mb-3 " src="img/ekremnamazci.png" alt="profile">
+                                            </div>
+                                            <div class="ap-nameAddress">
+                                                <h6 class="ap-nameAddress__title">Ekrem Namazci</h6>
+                                                <p class="ap-nameAddress__subTitle fs-14 pt-0 m-0 ">Data &amp; Al Lead</p>
+                                                <p class="ap-nameAddress__subTitle fs-14 pt-0 m-0 ">Microsoft</p>
+                                            </div>
+                                            <div class="ap-button button-group d-flex justify-content-center flex-wrap pt-20">
+                                                <button type="button" class="btn btn-info  border text-capitalize px-25 follow radius-md"><a style="color: white; font-size: 14px;" href="#master_class">Watch masterclass</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-25 p-0">
+                                <div class="card border-0">
+                                    <div class="card-body text-center pt-30 px-25 pb-0">
+                                        <div class="account-profile-cards  ">
+                                            <div class="ap-img rp d-flex justify-content-center">
+                                                <!-- Profile picture image-->
+                                                <img class="ap-img__main bg-opacity-primary  wh-120 rounded-circle mb-3 " src="img/sigridrouam.png" alt="profile">
+                                            </div>
+                                            <div class="ap-nameAddress">
+                                                <h6 class="ap-nameAddress__title">Dr. Sigrid Rouam</h6>
+                                                <p class="ap-nameAddress__subTitle fs-14 pt-0 m-0 ">Head of Data Science</p>
+                                                <p class="ap-nameAddress__subTitle fs-14 pt-0 m-0 ">Credit Suisse</p>
+                                            </div>
+                                            <div class="ap-button button-group d-flex justify-content-center flex-wrap pt-20">
+                                                <button type="button" class="btn btn-info  border text-capitalize px-25 follow radius-md"><a style="color: white;    font-size: 14px;" href="#master_class_2"  >Watch masterclass</a></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 mt-4" style=" height: 442px;">
+                    <div class="card-header" style="position: relative;padding-top: 16px;">
+                        <h5 class="font-weight-bold">Upcoming Mentor Talks</h5>
+                        <p class="small pt-1">Here are you next mentoring sessions with your mentors.</p>
+                    </div>
+                    <div style="margin: auto;padding-top: 31px;">
+                        <img  style="display: table; margin: auto;" src="img/pagePicture/learning.png" alt="">
+                        <div class="text-center" style="margin-top: 34px">
+                            <h6>No Mentor talks schedules yet.</h6>
+                            <p style="font-size:11px">you need to be in a mentor relationship to start a learning path</p>
+                        </div>
+                    </div>
+                    <button style="margin: auto;
+                              margin-top: -30px;
+                              border: 1px solid #2a8ffc;
+                              border-radius: 8px;
+                              background: white;
+                              color: #2a8ffc;
+                              "> Go to Mentor Overview</button>
+                </div>
+            </div >
+            <div class="col-lg-5 mb-25 pt-2 px-3" style="display:none;" id="main_page_learning_path"  >
+                <div class="social-overview-wrap">
+                    <div class="card border-0">
+                        <div class="card-header" style="position: relative;padding-top: 16px;">
+                            <h5 class="font-weight-bold">Learning paths</h5>
+                            <p class="small pt-1">Monitor your learning paths.</p>
+                            <a href="#learning_paths"><button class="btn-sm btn btn-default btn-squared btn-outline-success float-end" style="right: 20px;top: 18px;position: absolute;">View all paths</button></a>
+                        </div>
+                        <div class="row m-0 mt-2 pb-3">
+                            <div class="col-md-12 mb-25 p-0 pt-2">
+                                <div class="media d-flex justify-content-start">
+                                    <div class="media py-20 pl-20 pr-20 bg-white radius-xl w-100">
+                                        <img class=" mr-20 rounded-circle wh-70 bg-opacity-primary  " src="img/favicon.png" alt="Generic placeholder image">
+                                        <div class="media-body d-xl-flex users-list-body">
+                                            <div class="flex-1 pr-xl-30">
+                                                <h6 class="mt-0 fw-500">Data Science</h6>
+                                                <span class="small pt-0">by GDEXA</span>
+                                                <div class="user-group-progress-bar">
+                                                    <div class="progress-wrap d-flex align-items-center ">
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-info" role="progressbar" style="width: 20%;" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                        <span class="progress-percentage">20%</span>
+                                                    </div>
+                                                    <p class="color-light fs-12 mb-0 small pt-0">3 / 15 tasks completed</p>
+                                                </div>
+                                            </div>
+                                            <a href="#learning_path_detail"><button type="button" class="btn btn-info border text-capitalize px-25 radius-md mt-4">Continue</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-25 p-0 pt-2">
+                                <div class="media d-flex justify-content-start">
+                                    <div class="media py-20 pl-20 pr-20 bg-white radius-xl w-100">
+                                        <img class=" mr-20 rounded-circle wh-70 bg-opacity-primary  " src="img/ekremnamazci.png" alt="Generic placeholder image">
+                                        <div class="media-body d-xl-flex users-list-body">
+                                            <div class="flex-1 pr-xl-30" style="">
+                                                <h6 class="mt-0 fw-500">Business Development</h6>
+                                                <span class="small pt-0">by Ekrem Namazci</span>
+                                                <div class="user-group-progress-bar">
+                                                    <div class="progress-wrap d-flex align-items-center ">
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-info" role="progressbar" style="width: 84%;" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                        <span class="progress-percentage">84%</span>
+                                                    </div>
+                                                    <p class="color-light fs-12 mb-0 small pt-0">12 / 15 tasks completed</p>
+                                                </div>
+                                            </div>
+                                            <a href="#master_class"><button type="button" class="btn btn-info border text-capitalize px-25 radius-md mt-4">Continue</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-0 mt-2 pb-3">
+                            <div class="col-md-12 mb-25 p-0 pt-2">
+                                <div class="media d-flex justify-content-start">
+                                    <div class="user-group-disable txt1" style="background: none;">
+                                        <div class="user-group-disable-lock" style="background: #f5dbdb;height: 80px !important; width: 80px!important;">
+                                            <span style="stroke-width: 2;height: 44px !important; width: 44px!important; color:#f34949;" class="nav-icon" data-feather="lock"></span>
+                                        </div>
+                                    </div>
+                                    <div class="media py-20 pl-20 pr-20 bg-white radius-xl w-100"  style="opacity: 0.3">
+                                        <img class=" mr-20 rounded-circle wh-70 bg-opacity-primary  " src="img/salmanjaffer.png" alt="Generic placeholder image">
+                                        <div class="media-body d-xl-flex users-list-body">
+                                            <div class="flex-1 pr-xl-30">
+                                                <h6 class="mt-0 fw-500">Data Science</h6>
+                                                <span class="small pt-0">by Karan Singh Grover</span>
+                                                <div class="user-group-progress-bar">
+                                                    <div class="progress-wrap d-flex align-items-center ">
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-info" role="progressbar" style="width: 8%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                        <span class="progress-percentage">0%</span>
+                                                    </div>
+                                                    <p class="color-light fs-12 mb-0 small pt-0">0 / 15 tasks completed</p>
+                                                </div>
+                                            </div>
+                                            <a href="#learning_path_detail"><button type="button" class="btn btn-light border text-capitalize px-25 radius-md mt-4">Start learning paths</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-25 p-0 pt-2">
+                                <div class="media d-flex justify-content-start">
+                                    <div class="user-group-disable txt1" style="background: none;">
+                                        <div class="user-group-disable-lock" style="background: #f5dbdb;height: 80px !important; width: 80px!important;">
+                                            <span style="stroke-width: 2;height: 44px !important; width: 44px!important; color:#f34949;" class="nav-icon" data-feather="lock"></span>
+                                        </div>
+                                    </div>
+                                    <div class="media py-20 pl-20 pr-20 bg-white radius-xl w-100" style="opacity:0.3">
+                                        <img class=" mr-20 rounded-circle wh-70 bg-opacity-primary  " src="img/sigridrouam.png" alt="Generic placeholder image">
+                                        <div class="media-body d-xl-flex users-list-body">
+                                            <div class="flex-1 pr-xl-30" style="">
+                                                <h6 class="mt-0 fw-500">Business Development</h6>
+                                                <span class="small pt-0">by Dr. Sigrid Rouam</span>
+                                                <div class="user-group-progress-bar">
+                                                    <div class="progress-wrap d-flex align-items-center ">
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-info" role="progressbar" style="width: 8%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                        <span class="progress-percentage">0 %</span>
+                                                    </div>
+                                                    <p class="color-light fs-12 mb-0 small pt-0">0 / 15 tasks completed</p>
+                                                </div>
+                                            </div>
+                                            <a href="#learning_path_detail"><button type="button" class="btn btn-light border text-capitalize px-25 radius-md mt-4">Start learning paths</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 main_learning_paths_empty">
+                <div class="card border-0" style=" height: 442px;">
+                    <div class="card-header" style="position: relative;padding-top: 16px;">
+                        <h5 class="font-weight-bold">Upcoming Mentor Talks</h5>
+                        <p class="small pt-1">Here are you next mentoring sessions with your mentors.</p>
+                    </div>
+                    <div style="margin: auto;padding-top: 31px;">
+                        <img  style="display: table; margin: auto;" src="img/pagePicture/learning.png" alt="">
+                        <div class="text-center" style="margin-top: 34px">
+                            <h6>No Mentor talks schedules yet.</h6>
+                            <p style="font-size:11px">you need to be in a mentor relationship to start a learning path</p>
+                        </div>
+                    </div>
+                    <button style="margin: auto;
+                              margin-top: -30px;
+                              border: 1px solid #2a8ffc;
+                              border-radius: 8px;
+                              background: white;
+                              color: #2a8ffc;
+                              "> Go to Mentor Overview</button>
+                </div>
+            </div>
+            <div class="col-5 main_learning_paths_empty">
+                <div class="card border-0" style="height: 442px">
+                    <div class="card-header" style="position: relative;padding-top: 16px;">
+                        <h5 class="font-weight-bold">Learning paths</h5>
+                        <p class="small pt-1">Monitor your learning paths.</p>
+                    </div>
+                    <div style="margin: auto;padding-top: 31px;">
+                        <img  style="display: table; margin: auto;" src="img/pagePicture/learning.png" alt="">
+                        <div class="text-center" style="margin-top: 34px">
+                            <h6>No learning paths started yet.</h6>
+                            <p style="font-size:11px">You need to be in a Mentor relationship to start a learning path</p>
+                        </div>
+                    </div>
+                    <button style="margin: auto;margin-top: -30px;
+                   border: 1px solid #2a8ffc;
+                   border-radius: 8px;
+                   background: white;
+                   color: #2a8ffc;
+                   ">Go to Mentor Overview</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
